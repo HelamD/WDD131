@@ -1,0 +1,150 @@
+ 
+* {
+	margin: 1rem;
+	padding: 0;
+    box-sizing: border-box;
+    
+	
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    background-color: #f3f3f3;
+    
+
+    
+}
+
+h1 {
+    
+    font-family: "Poppins", serif;
+    font-weight: 350;
+    color: white;
+    margin: 0.5rem;
+    justify-content:space-around;
+    padding: .8rem;
+    font-size: 3rem;
+    
+}
+
+strong {
+    color: #2ED1CC;
+}
+
+header {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    background-color: rgb(75, 74, 74);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    
+    
+    background-color: #d12e33 ;
+    padding: 1rem;
+   
+
+}
+
+nav ul {
+	list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    font-size: 1.3rem;
+    text-align: center;
+    display: block;
+    color: rgb(219, 217, 214);
+    
+    padding: 0.5rem 1rem;
+	text-decoration: none;
+
+}
+
+nav a:hover {
+    text-decoration: overline;
+    background-color: #d34f53;
+    border-radius: 4px;
+}
+
+
+
+main {
+    max-width: 1600px; 
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    
+}
+.card {
+    background-color: white;
+    overflow: hidden;
+    
+}
+
+.card h2 {
+    background-color: #d12e33 ;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+.info {
+    padding: 1rem;
+}
+
+.helam {
+    
+    display: block;
+    margin: 1rem auto;
+}
+
+.flag {
+    
+    margin: 1rem 0;
+}
+
+section li a {
+    color: #1B4965;
+    text-decoration: none;
+}
+
+section li a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.footer {
+    text-align: center;
+    display: block;
+    background-color: rgb(75, 74, 74) ;
+    
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    
+}
+
+footer p {
+    color: #f3f3f3;
+
+}
+
+
+
+
+
+
+
