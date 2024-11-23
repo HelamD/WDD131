@@ -1,0 +1,73 @@
+* {
+	margin: 1rem;
+	padding: 0;
+    box-sizing: border-box;
+    
+	
+}
+
+body {
+    font-family: "roboto", serif;
+    font-weight: 400;
+    
+    
+    text-align: center;
+    
+    
+    
+}
+
+header {
+    
+    padding: 1rem;
+    max-width: 640px;
+    margin: 1rem auto;
+    background-color: #b9e9f5;
+}
+
+
+
+h2 {
+    padding: 1rem;
+}
+
+.scriptures {
+    background-color: #b9e9f5;
+    max-width: 640px;
+    margin: 1rem auto;
+    display: grid;
+}
+
+section {
+    background-color: white;
+    max-width: 640px;
+}
+
+.nephi {
+    margin: 1rem;
+}
+
+.helaman {
+    margin: 1rem;
+}
+
+p {
+    padding: 1rem;
+}
+
+footer {
+    max-width: 640px;
+    background-color: #b9e9f5;
+    margin: 1rem auto;
+    padding: .5rem;
+}
+
+@media screen and (min-width: 500px) {
+    header {
+        color: white;
+        background-color: black;
+    }
+    main {
+        grid-template-columns:  1fr 1fr;
+    }
+}
