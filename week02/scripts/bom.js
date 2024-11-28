@@ -5,23 +5,34 @@ const list = document.querySelector('#list');
 
 addButton.addEventListener('click', function(){
     const inputResponse = input.value;
-    input.value= '';
 
-    const listItem = document.createElement('li');
-    const deleteButton = document.createElement('button');
+    if (input.value.trim() !== ''){
+        
+        input.focus() 
 
-    listItem.textContent = inputResponse;
+        input.value= '';
 
-    deleteButton.textContent = '❌';
+        const listItem = document.createElement('li');
+        const deleteButton = document.createElement('button');
 
-    listItem.appendChild(deleteButton)
-    list.appendChild(listItem);
+        listItem.textContent = inputResponse;
 
-    deleteButton.addEventListener('click', function(){
-        list.removeChild(listItem)
-    });
+        deleteButton.textContent = '❌';
 
-    input.focus();
+        listItem.appendChild(deleteButton)
+        list.appendChild(listItem);
+
+        deleteButton.addEventListener('click', function(){
+            list.removeChild(listItem)
+            
+        });
+
+        input.focus();
+        
+        }
+
+
+    
 })
 
 
