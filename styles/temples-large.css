@@ -25,7 +25,21 @@
         border: none;
     }
 
+    footer {
+        text-align: center;
+        display: block;
+        background-color:  #155e51 ;
+        
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        
+    }
     
+    footer p {
+        color: #f3f3f3;
+    
+    } 
 }
 
 

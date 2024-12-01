@@ -84,3 +84,56 @@ h1 {
 }
 
 
+.album {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 1.5rem; /* Space between items */
+    justify-content: center;
+}
+
+figure {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+figure img {
+    width: 100%; /* Ensures images fit within grid cells */
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    padding: 0.5rem;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #115555;
+    color: white;
+    margin-top: 2rem;
+}
+
+
+footer {
+    text-align: center;
+    display: block;
+    background-color:  #155e51 ;
+    
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    
+}
+
+footer p {
+    color: #f3f3f3;
+
+}
