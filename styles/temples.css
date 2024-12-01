@@ -84,11 +84,22 @@ h1 {
 }
 
 
+main{
+    height: 100vh;
+    margin: 1rem;
+}
+
+h2 {
+    text-align: center;
+    margin: 1rem;
+}
+
 .album {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-    gap: 1.5rem; /* Space between items */
+    gap:7rem; 
     justify-content: center;
+    margin: 1rem;
 }
 
 figure {
@@ -101,10 +112,12 @@ figure {
 }
 
 figure img {
-    width: 100%; /* Ensures images fit within grid cells */
+    width: 100%;
     height: auto;
     display: block;
 }
+
+
 
 figcaption {
     padding: 0.5rem;
