@@ -39,8 +39,15 @@
 
 
 
-const article = document.querySelector('article')/
+//const article = document.querySelector('article')/
 
+
+const fullName = function (first, last) {
+    return first + " "  + last;
+   
+}
+
+document.querySelector('#fullName').innerHTML = fullName(first, last);
 
 
 
