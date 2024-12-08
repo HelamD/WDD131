@@ -1,0 +1,59 @@
+@media (min-width: 800px) {
+
+    body {
+        font-family: Roboto, sans-serif;
+        line-height: 1.6;
+        color: black;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        background-color: #2C8444;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .background-image {
+        width: 100vh;
+        display: block;
+      }
+
+      .data,
+      .weather{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.8); 
+        padding: 1rem;
+        border-radius: 10px;
+      }
+
+      .data {
+        top: 20%; 
+        left: 5%; 
+        width: 20%; 
+        background-color: white;
+      }
+
+      .cruz {
+        width: 50px;
+        
+      }
+
+      .weather {
+        top:45%;
+        right:10%;
+      }
+
+    footer {
+        text-align: center;
+        background-color: #c71e3c;
+        color: white;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+}
