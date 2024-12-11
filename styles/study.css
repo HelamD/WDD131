@@ -1,0 +1,46 @@
+:root {
+    --head:black;
+    --ColorHead: white;
+    --borderBox:hsla(0,0%,33%,1) ;
+    --border: hsla(0, 0%, 42%, 0.8);
+    --zebra:hsla(0,0%,85%,.9);
+}
+
+body {
+    padding: 5%;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid var(--border) ;
+    border-collapse: separate;
+    padding: .4rem;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: grey;
+}
+
+
+
+thead {
+    color: var(--ColorHead);
+    background-color: var(--head);
+    padding: .5rem;
+    
+}
+
+thead tr:nth-child(even){
+    background-color: #333;
+  }
+
+.blank {
+    background-color: black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+    
+}
