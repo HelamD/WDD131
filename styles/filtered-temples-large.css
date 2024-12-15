@@ -1,0 +1,45 @@
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #nav-menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+        max-width: none;
+    }
+
+    #nav-menu a {
+        color: white;
+        padding: 0.5rem 1rem;
+    }
+
+    #nav-menu li {
+        border: none;
+    }
+
+    footer {
+        text-align: center;
+        display: block;
+        background-color:  #155e51 ;
+        
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        
+    }
+    
+    footer p {
+        color: #f3f3f3;
+    
+    } 
+}
+
+
