@@ -7,7 +7,7 @@ const list = document.querySelector('#list');
 let chaptersArray = getChapterList() || [];
 
 chaptersArray.forEach(chapter => {
-    displayChapter();
+    displayList(chapter);
 });
 
 
@@ -15,14 +15,14 @@ addButton.addEventListener('click', function(){
 
     if (input.value.trim() !== ''){
         
-        displayChapter(input.value);
+        displayList(input.value);
         chaptersArray.push(input.value);
 
-       setChapterList();
+        setChapterList();
 
-       input.value = ''
+        input.value = ''
 
-       input.focus();
+        input.focus();
 
     }
     
@@ -37,23 +37,22 @@ function displayList(item) {
 
     deleteButton.textContent = '❌';
 
-    listItem.appendChild(deleteButton)
+    listItem.appendChild(deleteButton);
     list.appendChild(listItem);
 
     deleteButton.addEventListener('click', function(){
-        list.removeChild(listItem)
+        list.removeChild(listItem);
 
-        deleteChaper(listItem.textContent)
+        deleteChapter(listItem.textContent);
         
     });
-
-    input.focus();
     
     }
 
 function setChapterList() {
-    LocalStorage.setItem('myBomList', JSON.stringify(chaptersArray));
-
+    localStorage.setItem('myBomList', JSON.stringify(chaptersArray));
+    
+    
 }
 
 function getChapterList() {
@@ -64,8 +63,8 @@ function getChapterList() {
 function deleteButton(chapter) {
     //reformat chapter
 
-    chapter = chapter.slice(1, chapter.length -1)
-    chaptersArray.flter((item) => item !== chapter);
+    chapter = chapter.slice(0, chapter.length -1);
+    chaptersArray = chaptersArray.filter((item) => item !== chapter);
 
     setChapterList();
 }
