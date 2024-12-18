@@ -42,12 +42,20 @@
 //const article = document.querySelector('article')/
 
 
-const fullName = function (first, last) {
-    return first + " "  + last;
+//const fullName = function (first, last) {
+ //   return first + " "  + last;
    
+//}
+
+//document.querySelector('#fullName').innerHTML = fullName(first, last);
+
+
+function calculate(a,b, callback) {
+  callback(a + b);
 }
 
-document.querySelector('#fullName').innerHTML = fullName(first, last);
+function displayResult(result) {
+  console.log('The result is: ' + result)
+}
 
-
-
+displayResult(calculate)
