@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+}
+
+body {
+    padding: .5rem 2%;
+    background-color: #ffffff;
+}
+
+header {
+    max-width: 500px;
+    background-color: rgb(15, 87, 87);
+    padding: 1.5rem;
+}
+
+header h1 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+main {
+    padding: 0;
+    min-height:20rem ;
+}
+
+/*------------ Form Stylin--------------*/
+form {
+    background-color:rgb(176, 233, 233) ;
+}
+
+.wb fieldset {
+    margin: 1rem 0;
+    border: 1px solid hsl(0, 0%, 91%);
+    border-radius:  6px;
+    padding: 1rem 2%;
+    
+}
+
+.wb label {
+    display: block;
+    padding: .2rem;
+    padding-top: .2rem;
+    color: rgb(41, 40, 40);
+}
+
+.wb legend {
+    color: rgb(228, 101, 16);
+    padding: 0 .5rem ;
+
+}
+
+.wb label {
+    display: block;
+    font-size: .9rem;
+    padding-top: .7rem;
+    padding-bottom: 2%;
+}
+
+.wb div {
+    padding-top: 1rem;
+    padding-bottom: 2%;
+}
+
+.wb input[type="text"],.wb input[type="date"], .wb select{
+    
+    display: block;
+    background-color: rgb(241, 241, 241);
+    border: solid 1px hsl(0, 4%, 69%);
+    padding: .50rem;
+    color:#1f1e1e;
+    max-width: 400px;
+}
+
+.wb input[type="text"],.wb input[type="date"],
+ .wb textarea,
+.wb select {
+    display: block;
+    background-color:hsl(0, 26%, 96%) ;
+    border: solid 1px hsl(0, 0%, 95%) ;
+    width: 95%;
+    
+}
+
+.wb textarea {
+    padding: 1.5rem 0 1.5rem 0 ;
+}
+
+.wb input[type="radio"],.wb input[type="checkbox"] {
+
+    margin-right: 6px;
+}
+
+.wb input[type="radio"] + label {
+    margin-right: 1rem;
+}
+
+
+.wb input:required {
+    border-left: solid 3px red;
+}
+
+.wb input:required:valid {
+    border-left: solid 3px green;
+}
+
+
+button[type = "submit"] {
+    border: none;
+    background-image: linear-gradient(rgb(57, 57, 223), rgb(45, 45, 148));
+    color: white;
+    border-radius: 6px;
+    width:96% ;
+    padding: .8rem;
+    max-width: 400px;
+    margin:1rem 2% 2rem 3% ;
+    box-shadow: 1px 1px 4px hsl(0, 3%, 81%);
+}
+
+button[type="submit"]:hover {
+    background-color: black;
+    color: white;
+}
+
+
+footer {
+    background-color: rgb(15, 87, 87);
+    padding: 1.5rem;
+    text-align: center;
+}

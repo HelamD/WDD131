@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-larger.css">
+    <title>Helam Bello WDD131 - Product Review Form</title>
+</head>
+<body>
+    <header><h1>Product Review</h1></header>
+
+    <form method="get" action="review.html" class="wb">
+        
+        <fieldset>
+        <label >Product Name</label>
+        <select name="name" id="name" required >Please select...</select>
+            <option value="" disabled selected>Select a Product...</option>
+            
+
+        
+            <legend>Overral Rating</legend>
+            <label><input type="radio" name="rating" value="rate" id="onestar">⭐</label>
+            <label><input type="radio" name="rating" value="rate" id="twostar" required>⭐⭐</label>
+            <label><input type="radio" name="rating" value="rate" id="threestar" required>⭐⭐⭐</label>
+            <label><input type="radio" name="rating" value="rate" id="fourstar" required>⭐⭐⭐⭐</label>
+            <label><input type="radio" name="rating" value="rate" id="fivestar" required>⭐⭐⭐⭐⭐</label>
+
+        </fieldset>
+        <fieldset>
+
+            <label>Anticipated Completion Date <input type="date" name="completed" id="date" required></label>
+
+            <div>Which feature did you find useful in the Product?</div>
+            <div>(Select all tha apply)</div>
+            <label><input type="checkbox" name="durability" value="yes">Durability</label>
+            <label><input type="checkbox" name="ease" value="yes">Ease of Use</label>
+            <label><input type="checkbox" name="perform" value="yes">Perfomance</label>
+            <label><input type="checkbox" name="designing" value="yes">Desigm</label>
+
+            <label>Written Reviews<textarea name="textarea" id="tesxtare" placeholder="Write a review"></textarea></label>
+
+            <label >Your Name<input type="text" name="user" value="User" id="user"></label>
+        </fieldset>
+
+    <button type="submit">Send Review</button>
+
+    <Footer>
+
+        <p>©<span id="currentyear"></span> -⭐ Helam Bello ⭐</p>
+        <p id="lastModified">  </p>
+
+    </Footer>
+        
+    </form>
+    <script src="scripts/form.js" defer></script>
+</body>
+</html>
