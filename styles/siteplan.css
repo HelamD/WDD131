@@ -1,0 +1,146 @@
+
+:root {
+    --primary-color: #eaad59;
+    --color-light: #e2effe;
+    --secundary-color: #0b2558;
+    --second-light: #8c508f;
+    --white: #ffffff;
+}
+
+
+body {
+    font-family: "Roboto," sans-serif;
+    background-color: var(--primary-color);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    background-color: #ffffff;
+    box-shadow:0 2px 4px rgba(0, 0, 0, 0.1) ;
+}
+
+.nav-links {
+    list-style: none;
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo h1 {
+    font-size: 50px;
+    color: #0b2558;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2; 
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 5rem;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem ;
+}
+
+
+.card img {
+    width: 100% ;
+    height: auto;
+    display: block;
+}
+
+.card h2, .card p {
+    margin: 3% ;
+}
+
+footer {
+    background-color: #0b2558;
+    
+    padding: 5rem;
+    color: var(--white);
+
+    
+}
+
+footer h3, footer p {
+    padding: 1%;
+}
