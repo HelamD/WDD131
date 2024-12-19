@@ -1,0 +1,27 @@
+@media  (min-width: 768px) {
+    
+
+   
+    .lager-view {
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        display: none;
+        
+    }
+
+    header {
+        margin: 1rem;
+       min-width: 768pxpx;
+       padding: 2rem;
+       flex-direction: row;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    button[type = "submit"] {
+        width: 100%;
+    }
+}

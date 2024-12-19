@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="styles/form-larger.css">
     <title>Helam Bello WDD131 - Product Review Form</title>
 </head>
-<body>
+<body >
+
+    <div class="larger-view">
     <header><h1>Product Review</h1></header>
 
     <form method="get" action="review.html" class="wb">
         
         <fieldset>
-        <label >Product Name</label>
-        <select name="name" id="name" required >Please select...</select>
+            <label >Product Name</label>
+            <select name="name" id="name" required >Please select...</select>
             
             
 
 
-            <legend>Overral Rating</legend>
+            <label>Overral Rating</label>
+
             <label><input type="radio" name="rating" value="rate" id="onestar">⭐</label>
             <label><input type="radio" name="rating" value="rate" id="twostar" required>⭐⭐</label>
             <label><input type="radio" name="rating" value="rate" id="threestar" required>⭐⭐⭐</label>
@@ -31,8 +34,10 @@
 
             <label>Anticipated Completion Date <input type="date" name="completed" id="date" required></label>
 
-            <div>Which feature did you find useful in the Product?</div>
-            <div>(Select all tha apply)</div>
+            <div>Which feature did you find useful in the Product? <b>
+                
+            </b>(Select all tha apply)</div>
+            
             <label><input type="checkbox" name="durability" value="yes">Durability</label>
             <label><input type="checkbox" name="ease" value="yes">Ease of Use</label>
             <label><input type="checkbox" name="perform" value="yes">Perfomance</label>
@@ -49,6 +54,7 @@
 
         <p>©<span id="currentyear"></span> -⭐ Helam Bello ⭐</p>
         <p id="lastModified">  </p>
+    </div>
 
     </Footer>
         
