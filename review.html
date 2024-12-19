@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    ><header>
+        <h1>Product Review</h1>
+    </header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header><h1>Thank You for Your Review!</h1></header>
+    <main>
+        <section>
+            <h2>Review Summary</h2>
+            <div id="review-summary"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> - Helam Bello</p>
+    </footer>
+    <script>
+        // Display the current year in the footer
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+
+        // Parse the query string from the URL
+        const params = new URLSearchParams(window.location.search);
+        const reviewSummary = document.getElementById('review-summary');
+
+        // Create a summary of the form data
+        let summaryHTML = '<ul>';
+        for (const [key, value] of params) {
+            summaryHTML += `<li><strong>${key}:</strong> ${decodeURIComponent(value)}</li>`;
+        }
+        summaryHTML += '</ul>';
+
+        // Display the summary on the page
+        reviewSummary.innerHTML = summaryHTML;
+    </script>
+</body>
+</html>
+
+    
+</body>
+</html>
