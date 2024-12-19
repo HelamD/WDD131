@@ -3,26 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    ><header>
-        <h1>Product Review</h1>
-    </header>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Confirmation</title>
     <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
-    <header><h1>Thank You for Your Review!</h1></header>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
     <main>
         <section>
             <h2>Review Summary</h2>
             <div id="review-summary"></div>
+        </section>
+        <section>
+            <h2>Review Stats</h2>
+            <p id="review-counter"></p>
         </section>
     </main>
     <footer>
@@ -45,10 +40,14 @@
 
         // Display the summary on the page
         reviewSummary.innerHTML = summaryHTML;
-    </script>
-</body>
-</html>
 
-    
+        // Local Storage Counter
+        const counterKey = 'reviewCounter'; // Key for localStorage
+        let reviewCount = parseInt(localStorage.getItem(counterKey)) || 0; // Get current counter or default to 0
+        reviewCount++; // Increment the counter
+        localStorage.setItem(counterKey, reviewCount); // Update localStorage
+        document.getElementById('review-counter').textContent = `You have completed ${reviewCount} reviews so far.`;
+
+    </script>
 </body>
 </html>
