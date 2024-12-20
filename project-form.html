@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/project-form.css">
+    
+    <title>Helam Bello WDD131 - Product Review Form</title>
+</head>
+<body >
+
+    <div class="larger-view">
+        <header>
+
+        
+            <nav class="navbar">
+                <div class="logo">
+                    
+                    <h1>Basketball Pair Up</h1>
+                </div>
+                
+                <div>
+    
+                <ul class="nav-links">
+                    <li class="link"><a href="final-project.html">Home</a></li>
+                    <li class="link"><a href="project-form.html">Register Here</a></li>
+                    <li class="link"><a href="#">About the Course</a></li> 
+    
+                </ul>
+                </div>
+            </nav>
+    
+            <div class="hero">
+                <img src="images/form.jpg" alt="backgroud">
+                <div class="overlay">
+                    <div class="hero-text">
+                        <h1>Send Your Application Here</h1>
+                        <p>With your information we can pair you up with one of our instructors in the nearest area here in Brazil</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    <form method="get" action="project-form-review.html" class="wb">
+        
+        <fieldset>
+            <legend>Tell us about yourself</legend>
+
+
+            <label>Your Name <input type="text" name="user"  id="user" placeholder="Your Name" required></label>
+
+            <label>Your Email<input type="email" name="email"  id="email" placeholder="username@email.com" required></label>
+
+            <label>Where are you from?<select name="place" id="place" required >Please select...</select></label>
+            
+            
+
+
+            <label>What do you think your skill level is?</label>
+
+            <label><input type="radio" name="rating" value="rate" id="onestar"> Beginner</label>
+            <label><input type="radio" name="rating" value="rate" id="twostar" required>Intermidiate</label>
+            <label><input type="radio" name="rating" value="rate" id="threestar" required>Advanced</label>
+            
+
+        </fieldset>
+        <fieldset>
+            <Legend>More about your interest</Legend>
+
+            <div> How did you find us?<b>
+            </b>(Select all that apply)</div>
+            
+            <label><input type="checkbox" name="Facebook" value="yes">Facebook</label>
+            <label><input type="checkbox" name="Instagram" value="yes">Instagram</label>
+            <label><input type="checkbox" name="Friend/Family" value="yes">Friend/Family</label>
+            <label><input type="checkbox" name="Google" value="yes">Google</label>
+
+            <label>Is there something specific do you want to master? let us know<textarea name="textarea" id="tesxtare" placeholder="Write a review"></textarea></label>
+
+            
+
+            
+            <label>When could your start your training?<input type="date" name="completed" id="date" required></label>
+
+            <button type="submit">Send Application</button>
+
+        </fieldset>
+
+    
+
+    <Footer>
+
+        <p>©<span id="currentyear"></span> -⭐ Helam Bello ⭐</p>
+        <p id="lastModified">  </p>
+    </div>
+
+    </Footer>
+        
+    </form>
+    <script src="scripts/project.js" defer></script>
+</body>
+</html>

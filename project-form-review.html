@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/project-form-review.css">
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+    <main>
+
+        <div class="summary">
+            <section>
+                <h2>Review Summary</h2>
+                <div id="review-summary"></div>
+            </section>
+            <section>
+                <h2>Review Stats</h2>
+                <p id="review-counter"></p>
+            </section>
+    </div>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> - Helam Bello</p>
+    </footer>
+    <script>
+        // Display the current year in the footer
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+
+        // Parse the query string from the URL
+        const params = new URLSearchParams(window.location.search);
+        const reviewSummary = document.getElementById('review-summary');
+
+        // Create a summary of the form data
+        let summaryHTML = '<ul>';
+        for (const [key, value] of params) {
+            summaryHTML += `<li><strong>${key}:</strong> ${decodeURIComponent(value)}</li>`;
+        }
+        summaryHTML += '</ul>';
+
+        // Display the summary on the page
+        reviewSummary.innerHTML = summaryHTML;
+
+        // Local Storage Counter
+        const counterKey = 'reviewCounter'; // Key for localStorage
+        let reviewCount = parseInt(localStorage.getItem(counterKey)) || 0; // Get current counter or default to 0
+        reviewCount++; // Increment the counter
+        localStorage.setItem(counterKey, reviewCount); // Update localStorage
+        document.getElementById('review-counter').textContent = `You have completed ${reviewCount} reviews so far.`;
+
+    </script>
+</body>
+</html>
